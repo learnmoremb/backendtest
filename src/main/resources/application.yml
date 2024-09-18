@@ -1,0 +1,38 @@
+## ===============================
+## SERVER CONFIGS
+## ===============================
+#server:
+#  port: 2031
+#  error:
+#    include-message: never
+#    include-binding-errors: never
+#
+## ===============================
+## SPRING CONFIGS
+## ===============================
+#spring:
+#  application:
+#    name: pract
+#  main:
+#    allow-circular-references: true
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/job_tasks?createDatabaseIfNotExist=true
+#    username: root
+#    password: root
+#    tomcat:
+#      test-while-idle: true
+#  jpa:
+#    hibernate:
+#      ddl-auto: update  # Automatically create or update the database schema
+#      naming:
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+#        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+#    open-in-view: false
+#    properties:
+#      hibernate:
+#        show-sql: true    # Correctly specify show-sql in properties
+#        format_sql: true  # Optional: Format SQL for better readability
+#  task:
+#    scheduling:
+#      pool:
+#        size: 10
